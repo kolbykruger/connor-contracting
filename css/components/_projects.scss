@@ -70,12 +70,16 @@
         }
 
         .title {
+            margin: 0;
             opacity: 0.5;
             transition: $transition-1;
         }
 
         .arrow {
-            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 1em;
             transition: $transition-1;
 
             i {

@@ -1712,9 +1712,20 @@ input[type="submit"].button {
 }
 
 .introduction .container {
-  max-width: 960px;
   padding: 1em;
-  text-align: center;
+}
+
+.introduction .group {
+  align-items: center;
+}
+
+.introduction .image {
+  flex: 1;
+}
+
+.introduction .text {
+  flex: 2;
+  padding-left: 2em;
 }
 
 @media (max-width: 768px) {
@@ -1789,12 +1800,16 @@ input[type="submit"].button {
 }
 
 .projects .project-item .title {
+  margin: 0;
   opacity: 0.5;
   transition: 250ms ease;
 }
 
 .projects .project-item .arrow {
-  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
   transition: 250ms ease;
 }
 
