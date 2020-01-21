@@ -1746,6 +1746,7 @@ input[type="submit"].button {
   position: relative;
   width: calc(50% - 2em);
   margin: 1em;
+  overflow: hidden;
 }
 
 .projects .project-item a {
@@ -1755,6 +1756,7 @@ input[type="submit"].button {
 
 .projects .project-item a:hover .image::before, .projects .project-item a:focus .image::before {
   opacity: 1;
+  transform: translate(0, 0);
 }
 
 .projects .project-item a:hover .date, .projects .project-item a:focus .date {
@@ -1780,6 +1782,7 @@ input[type="submit"].button {
   height: 100%;
   background: rgba(0, 0, 0, 0.75);
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75));
+  transform: translate(0, 3em);
   transition: 250ms ease;
 }
 
