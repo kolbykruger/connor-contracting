@@ -38,7 +38,7 @@ html.wf-inactive {
 body {
     color: $color-0;
     background: $color-grey-1;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-0;
     @include fs(16px);
 }
 
@@ -62,6 +62,7 @@ a {
 h1 {
     @include fluid('font-size', 2.5rem, 3.5rem);
     @include fluid('line-height', 1em, 1.2em);
+    text-transform: uppercase;
     font-weight: 600;
 }
 
@@ -80,6 +81,7 @@ h3 {
 h1,
 h2,
 h3 {
+    font-family: $font-1;
     margin: 0 0 0.25em;
     width: 100%;
 }
