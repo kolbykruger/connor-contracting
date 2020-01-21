@@ -1728,6 +1728,7 @@ input[type="submit"].button {
 }
 
 .projects .project-item {
+  position: relative;
   width: calc(50% - 3em);
   margin: 1.5em;
 }
@@ -1735,6 +1736,62 @@ input[type="submit"].button {
 .projects .project-item a {
   text-decoration: none;
   color: inherit;
+}
+
+.projects .project-item a:hover .image::before, .projects .project-item a:focus .image::before {
+  opacity: 1;
+}
+
+.projects .project-item a:hover .date, .projects .project-item a:focus .date {
+  opacity: 0.75;
+  transform: translate(0, 0);
+}
+
+.projects .project-item a:hover .title, .projects .project-item a:focus .title {
+  opacity: 1;
+}
+
+.projects .project-item .image {
+  position: relative;
+}
+
+.projects .project-item .image::before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.65));
+  transition: 250ms ease;
+}
+
+.projects .project-item .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  color: #fff;
+}
+
+.projects .project-item .date {
+  font-weight: 600;
+  opacity: 0;
+  transform: translate(-0.5em, 0);
+  transition: 250ms ease;
+}
+
+.projects .project-item .title {
+  opacity: 0.4;
+  transition: 250ms ease;
+}
+
+.projects .project-item .arrow {
+  display: none;
+  transition: 250ms ease;
 }
 
 .alt_rows {
