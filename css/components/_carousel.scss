@@ -1,11 +1,12 @@
 .carousel {
     margin: 0 auto;
     user-select: none;
-
+    margin-top: 1em;
 
     .container {
         display: none;
         padding: 0;
+        max-width: 100%;
 
         &.slick-initialized {
             display: block;

@@ -1,5 +1,10 @@
 .projects {
 
+    &.projects-widget {
+        background: $color-grey-1;
+        padding: 3em 0;
+    }
+
     .container {
 
     }
@@ -34,6 +39,10 @@
                 }
                 .title {
                     opacity: 1;
+                }
+                .arrow {
+                    opacity: 1;
+                    transform: translate(0,0);
                 }
             }
         }
@@ -83,6 +92,8 @@
             right: 0;
             bottom: 0;
             padding: 1em;
+            opacity: 0;
+            transform: translate(-0.5em, 0);
             transition: $transition-1;
 
             i {

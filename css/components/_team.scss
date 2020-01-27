@@ -1,0 +1,17 @@
+.team {
+
+    .team-item {
+        width: calc(25% - 2em);
+        margin: 1em;
+
+
+        .info {
+            margin: 0.5em 0;
+            text-align: center;
+        }
+
+        .name {
+            @include fluid('font-size', 1.25rem, 1.5rem);
+        }
+    }
+}
