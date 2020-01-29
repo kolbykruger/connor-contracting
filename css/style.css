@@ -678,6 +678,16 @@ hr::before {
   color: #fff;
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to bottom, #fff, transparent);
+}
+
 .header .container {
   position: relative;
   padding: 0.5em 1em 0;
@@ -685,7 +695,7 @@ hr::before {
 
 .header .group {
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .header .logo {
@@ -1472,7 +1482,8 @@ input[type="submit"].button {
 .carousel {
   margin: 0 auto;
   user-select: none;
-  margin-top: 1em;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .carousel .container {
