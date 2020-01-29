@@ -651,6 +651,15 @@ hr {
   font-size: 1.75rem;
 }
 
+hr.line {
+  margin: 0.5em auto;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+hr.line::before {
+  display: none;
+}
+
 hr::before {
   content: '.....';
   letter-spacing: 0.6em;
