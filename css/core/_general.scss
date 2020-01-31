@@ -40,6 +40,7 @@ body {
     background: #fff;
     font-family: $font-0;
     @include fs(16px);
+    @include fluid('line-height', 1.4em, 1.6em);
     overflow-x: hidden;
 }
 
@@ -63,13 +64,15 @@ a {
 h1 {
     @include fluid('font-size', 2.5rem, 3.5rem);
     @include fluid('line-height', 1em, 1.2em);
-    font-weight: 600;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 h2 {
     @include fluid('font-size', 1.75rem, 2.5rem);
     @include fluid('line-height', 1em, 1.2em);
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -175,6 +178,14 @@ hr {
     border: none;
     text-align: center;
     font-size: 1.75rem;
+
+    &.line {
+        margin: 0.5em auto;
+        border: 1px solid rgba(255,255,255,0.25);
+        &::before {
+            display: none;
+        }
+    }
 }
 
 hr::before {

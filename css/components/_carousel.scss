@@ -1,7 +1,8 @@
 .carousel {
     margin: 0 auto;
     user-select: none;
-    margin-top: 1em;
+    max-height: 100vh;
+    overflow: hidden;
 
     .container {
         display: none;
@@ -16,6 +17,7 @@
     .slide {
         user-select: none;
         width: 100%;
+        max-height: 100vh;
         position: relative;
         outline: none;
 

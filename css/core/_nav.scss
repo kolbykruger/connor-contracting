@@ -2,6 +2,7 @@
     text-align: center;
     user-select: none;
     z-index: 10;
+    margin-top: 1em;
 }
 
 .nav ul {
@@ -15,10 +16,12 @@
 }
 
 .nav a {
-    @include fs(16px);
+    @include fs(18px);
     display: block;
     color: $color-0;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
     transition: $transition-1;
 }
 
